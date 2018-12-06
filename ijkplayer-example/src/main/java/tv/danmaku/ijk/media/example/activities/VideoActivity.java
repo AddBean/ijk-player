@@ -39,7 +39,6 @@ import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.ijk.player.IjkVideoView;
-import com.ijk.player.media.MeasureHelper;
 
 import tv.danmaku.ijk.media.example.R;
 import tv.danmaku.ijk.media.example.application.Settings;

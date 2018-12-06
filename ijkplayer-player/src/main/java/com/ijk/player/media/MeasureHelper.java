@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2015 Bilibili
  * Copyright (C) 2015 Zhang Rui <bbcallen@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +24,6 @@ import android.view.View;
 import com.ijk.player.R;
 
 import java.lang.ref.WeakReference;
-
 
 public final class MeasureHelper {
     private WeakReference<View> mWeakView;
@@ -75,7 +75,7 @@ public final class MeasureHelper {
         //        + MeasureSpec.toString(heightMeasureSpec) + ")");
         if (mVideoRotationDegree == 90 || mVideoRotationDegree == 270) {
             int tempSpec = widthMeasureSpec;
-            widthMeasureSpec = heightMeasureSpec;
+            widthMeasureSpec  = heightMeasureSpec;
             heightMeasureSpec = tempSpec;
         }
 

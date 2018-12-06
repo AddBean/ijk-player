@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2015 Bilibili
  * Copyright (C) 2015 Zhang Rui <bbcallen@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -129,11 +130,11 @@ public class TextureRenderView extends TextureView implements IRenderView {
     // TextureViewHolder
     //--------------------
 
-    public ISurfaceHolder getSurfaceHolder() {
+    public IRenderView.ISurfaceHolder getSurfaceHolder() {
         return new InternalSurfaceHolder(this, mSurfaceCallback.mSurfaceTexture, mSurfaceCallback);
     }
 
-    private static final class InternalSurfaceHolder implements ISurfaceHolder {
+    private static final class InternalSurfaceHolder implements IRenderView.ISurfaceHolder {
         private TextureRenderView mTextureView;
         private SurfaceTexture mSurfaceTexture;
         private ISurfaceTextureHost mSurfaceTextureHost;
@@ -307,7 +308,6 @@ public class TextureRenderView extends TextureView implements IRenderView {
         public void releaseSurfaceTexture(SurfaceTexture surfaceTexture) {
             if (surfaceTexture == null) {
                 Log.d(TAG, "releaseSurfaceTexture: null");
-                return;
             } else if (mDidDetachFromWindow) {
                 if (surfaceTexture != mSurfaceTexture) {
                     Log.d(TAG, "releaseSurfaceTexture: didDetachFromWindow(): release different SurfaceTexture");

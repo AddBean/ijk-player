@@ -1,4 +1,5 @@
 /*
+ * Copyright (C) 2015 Bilibili
  * Copyright (C) 2015 Zhang Rui <bbcallen@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -121,7 +122,7 @@ public class SurfaceRenderView extends SurfaceView implements IRenderView {
     // SurfaceViewHolder
     //--------------------
 
-    private static final class InternalSurfaceHolder implements ISurfaceHolder {
+    private static final class InternalSurfaceHolder implements IRenderView.ISurfaceHolder {
         private SurfaceRenderView mSurfaceView;
         private SurfaceHolder mSurfaceHolder;
 
