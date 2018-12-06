@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume">音量</string>
+    <string name="brightness">亮度</string>
+    <string name="continue_play_ijk">继续播放</string>
+    <string name="stop_play_ijk">不播放</string>
+    <string name="has_no_wifi_prompt_ijk_video_view">您现在处于非WIFI网络下，如果继续会使用流量并带来一定费用，确认继续吗？</string>
+    <string name="title_prompt_video_ijk">提示</string>
+</resources>

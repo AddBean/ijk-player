@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jiadou/Desktop/projects/ijk/ijkplayer-android/android/ijkplayer/ijkplayer-example/build/intermediates/exploded-aar/ijkplayer/ijkplayer-player/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="26.0.2"
+        sha1="cd5bad170c322e0d298e4d8c56f741d2c3213e11">
+        <dex dex="/Users/jiadou/Desktop/projects/ijk/ijkplayer-android/android/ijkplayer/ijkplayer-example/build/intermediates/pre-dexed/all32/debug/ijkplayer-ijkplayer-player-unspecified_ac3d93b50cdf7b4ad70cbf8e44e41f0542b65ce2.jar" />
+    </item>
+
+</items>
